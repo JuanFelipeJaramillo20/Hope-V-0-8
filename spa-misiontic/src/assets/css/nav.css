@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+#app2{
+  border:5px solid green;
+}
 h1 {
   color: #426696;
   font-weight: 600;
@@ -50,15 +52,16 @@ img {
 
 .glass {
   background: white;
-  min-height: 80vh;
-  width: 75%;
+  min-height: 10vh;
+  border: 5px solid black;
+  width: 80%;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
   border-radius: 2rem;
-  z-index: 2;
+  z-index: 3;
   backdrop-filter: blur(2rem);
   display: flex;
     

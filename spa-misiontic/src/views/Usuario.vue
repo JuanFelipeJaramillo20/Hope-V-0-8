@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app2">
     <main>
       <NavbarComponent />
       <section class="glass">
@@ -10,7 +10,7 @@
             <div class="paciente">
               <div class="datos">
                 <div class="status">
-                  <h1>Ésta es la pagina del usuario, con sus datos</h1>
+                  
                 </div>
                 <div class="cards">
                   <div class="card">

@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <section class="glass">
+  <div id="menu">
+    <section class="glass"  >
       <div class="dashboard">
         <div class="user">
           <img src="../assets/images/hope.png" alt="" />

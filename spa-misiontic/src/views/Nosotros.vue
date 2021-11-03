@@ -7,7 +7,7 @@ export default {
 };
 </script>
 <template>
-  <div id="app">
+  <div id="app2">
     <main>
       <NavbarComponent />
       <section class="glass">
