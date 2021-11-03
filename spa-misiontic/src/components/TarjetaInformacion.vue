@@ -35,7 +35,9 @@
               </div>
           </div>
         </div>
-<div class="view"><router-view/></div>
+         <div class="view">
+         <router-view/>
+         </div>
       </section>
     </main>
     <div class="circle1"></div>

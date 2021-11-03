@@ -143,20 +143,15 @@ export default {
           .then( res => {
             this.datos.users = res.data;
             this.datos.users.forEach((value) => {
-   
-              if(this.datos.username === value.username){
-              
-                if(this.datos.password === value.password){
-               
+              if(this.datos.username == value.username && this.datos.password == value.password){
                   window.localStorage.setItem("autenticacion", "ok");
                   window.localStorage.setItem("Nombres", value.nombres);
                   window.localStorage.setItem("Apellidos", value.apellidos)
                   window.localStorage.setItem("id", value._id);
                   window.localStorage.setItem("email", value.email);
+                 console.log('Datos');
                   this.$router.push({path: '/usuario'})
-
                 }
-              }
             })
           })
          
