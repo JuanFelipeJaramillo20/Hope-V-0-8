@@ -4,7 +4,7 @@
       <NavbarComponent />
       <section class="glass">
         <!-- Aqui deben estar los componentes de cada vista-->
-        <div class="view">
+        <div >
           <!--COMPONENT-->
           <template>
             <div class="paciente">
@@ -160,3 +160,9 @@ export default {
   },
 };
 </script>
+<style >
+.card{
+  margin-left: 15px;
+}
+
+</style>

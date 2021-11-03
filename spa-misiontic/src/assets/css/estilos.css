@@ -5,6 +5,7 @@
     font-family: 'Times New Roman';
     }
 
+
 body{
     background: url("../images/cuted.png") no-repeat;
     width: 100%;
@@ -18,12 +19,15 @@ body{
     display:flex;
     align-content: center;
     align-items: center;  }
+    
 
 main{
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     margin: auto;
-    margin-top: 100px;}
+    margin-top: 0;
+}
+
 
 .contenedor__todo{    
     width: 100%;
@@ -33,16 +37,20 @@ main{
 
 .caja__trasera{
     width: 100%;
+    
     padding: 10px 20px;
     display: flex;
     justify-content: center;
     backdrop-filter: blur(10px);
-    background-color: rgba(248, 175, 193, 0.3);}
+    background-color: rgba(248, 175, 193, 0.3);
+    
+}
 
 .caja__trasera div{
     margin: 100px 40px;
     color: black;
-    transition: all 500ms;}
+    transition: all 500ms;
+}
 
 .caja__trasera div p,
 .caja__trasera div button{

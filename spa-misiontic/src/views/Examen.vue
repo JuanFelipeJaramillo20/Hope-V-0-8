@@ -1,5 +1,6 @@
 <template>
   <div id="app2">
+    
     <main>
       <NavbarComponent />
       <section class="glass">
@@ -8,7 +9,7 @@
           <!--COMPONENT-->
           <template>
             <div class="examen">
-              <h1>Ésta es la pagina de los examenes</h1>
+              
               <form>
                 <div class="container.examen">
                   <div class="form-row">

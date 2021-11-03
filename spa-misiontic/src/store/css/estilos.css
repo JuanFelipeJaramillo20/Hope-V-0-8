@@ -33,10 +33,11 @@
   }
   
   .glass {
-    border:5px solid black ;
+    
     background: white;
     min-height: 20vh;
     width: 20%;
+    
     background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.7),
@@ -62,6 +63,8 @@
     border-radius: 50%;
   }
   
+
+
   .circle1 {
     top: 5%;
     right: 15%;

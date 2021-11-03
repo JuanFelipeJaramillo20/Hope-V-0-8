@@ -7,9 +7,7 @@
           <template>
             <div class="paciente">
               <div class="datos">
-                <p class="h1" style="">
-                  Ésta es la pagina del paciente, con sus datos
-                </p>
+               
                 <div class="status">
                   <div class="row">
                     <div class="col-6">
@@ -93,6 +91,8 @@
     </main>
   </div>
 </template>
+
+
 <script>
 import NavbarComponent from "@/components/NavbarComponent";
 

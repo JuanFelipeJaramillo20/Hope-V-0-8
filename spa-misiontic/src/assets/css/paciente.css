@@ -4,6 +4,11 @@
 *:after {
   box-sizing: border-box;
 }
+
+.view {
+  width:100%;
+  padding:15px; 
+}
 body {
   padding: 1em;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
