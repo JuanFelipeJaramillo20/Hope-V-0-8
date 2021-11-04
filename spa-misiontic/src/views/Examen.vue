@@ -79,6 +79,7 @@
                 <h3>Resultados de malignidad del examen ingresado:</h3>
                 <br />
                 <h4 id="probabilidad"></h4>
+                <h4 id="resultado"></h4>
               </form>
             </div>
           </template>
@@ -130,7 +131,6 @@ export default {
           perimetroMedio,
         ],
       };
-      console.log(examen);
       this.axios
         .put(`/paciente/${this.datos.identificacion}`, examen)
         .catch((err) => console.log(err.response));
@@ -141,6 +141,20 @@ export default {
           console.log(result.data);
           document.getElementById("probabilidad").innerHTML =
             this.datos.probabilidad;
+            let probabilidadNumerica = parseFloat(this.datos.probabilidad.subString(22,27));
+            if(probabilidadNumerica < 0.10){
+              document.getElementById("resultado").innerHTML = "Probabilidad mínima. Sin priorización necesaria.";
+            }else if(probabilidadNumerica >= 0.10 && probabilidadNumerica < 0.3){
+              document.getElementById("resultado").innerHTML = "Probabilidad baja. Baja priorización necesaria.";
+            }else if(probabilidadNumerica >= 0.3 && probabilidadNumerica < 50){
+              document.getElementById("resultado").innerHTML = "Probabilidad moderada. Priorización necesaria.";
+            }else if(probabilidadNumerica >= 50 && probabilidadNumerica < 60){
+              document.getElementById("resultado").innerHTML = "Probabilidad Alta. Priorización alta necesaria.";
+            }else if(probabilidadNumerica >=60 && probabilidadNumerica < 80){
+              document.getElementById("resultado").innerHTML = "Probabilidad muy alta. Priorización muy alta necesaria.";
+            }else if(probabilidadNumerica >=75){
+              document.getElementById("resultado").innerHTML = "Probabilidad casi inminente. El paciente requiere atención inmediata.";
+            }
         })
         .catch((err) => {
           console.log(err.response);
